@@ -7,7 +7,8 @@ include_once 'header.php';
     <form action="includes/register.inc.php" method="post"><br>
         <input type="text" name="fullname" placeholder="Teljes név..."><br>
         <input type="text" name="email" placeholder="Email..."><br>
-        <input type="text" name="username" placeholder="Felhasználónév..."><br>
+        <!-- <input type="text" name="username" placeholder="Felhasználónév..."><br> -->
+        <input type="text" name="telnumber" placeholder="Telefonszám...(pl: 06/30-123-4567)">
         <input type="password" name="password" placeholder="Jelszó..."><br>
         <input type="password" name="passwordAgain" placeholder="Jelszó megint..."><br>
         <button type="submit" name="submit">Regisztráció</button>
