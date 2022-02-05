@@ -6,7 +6,7 @@ include_once 'header.php';
     <h1>Bejelentkezés</h1>
     <div class="signup-form-form">
         <form action="includes/login.inc.php" method="post"><br>
-            <input type="text" name="nameoremail" placeholder="Felhasználónév vagy email..."><br>
+            <input type="text" name="email" placeholder="Email..."><br>
             <input type="password" name="password" placeholder="Jelszó..."><br>
             <button type="submit" name="submit">Bejelentkezés</button>
         </form>
