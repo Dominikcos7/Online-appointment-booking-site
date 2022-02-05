@@ -16,7 +16,7 @@ session_start();
         <div class="header-right">
             <a href="index.php">Főoldal</a> 
             <?php
-                if(isset($_SESSION["usersUsername"])){
+                if(isset($_SESSION["usersEmail"])){
                     echo'<a href="profile.php">Profil</a>';
                     echo'<a href="includes/logout.inc.php">Kijelentkezés</a>';
                 }else{

@@ -7,8 +7,7 @@ include_once 'header.php';
     <form action="includes/register.inc.php" method="post"><br>
         <input type="text" name="fullname" placeholder="Teljes név..."><br>
         <input type="text" name="email" placeholder="Email..."><br>
-        <!-- <input type="text" name="username" placeholder="Felhasználónév..."><br> -->
-        <input type="text" name="telnumber" placeholder="Telefonszám...(pl: 06/30-123-4567)">
+        <input type="text" name="telnumber" placeholder="Telefonszám...(pl: 06/30-123-4567)"><br>
         <input type="password" name="password" placeholder="Jelszó..."><br>
         <input type="password" name="passwordAgain" placeholder="Jelszó megint..."><br>
         <button type="submit" name="submit">Regisztráció</button>
@@ -29,8 +28,8 @@ if(isset($_GET["error"])){
     }
     else if($_GET["error"]=="stmtfailed"){
         echo'<script type="text/javascript">window.alert("Valami félresikerült...");</script>';
-    }else if($_GET["error"]=="usernametaken"){
-        echo'<script type="text/javascript">window.alert("Ez a felhasználónév már foglalt!");</script>';
+    }else if($_GET["error"]=="emailtaken"){
+        echo'<script type="text/javascript">window.alert("Ezzel az emaillel már regisztráltak!");</script>';
     }
     else if($_GET["error"]=="none"){
         echo'<script type="text/javascript">window.alert("Sikeres regisztráció!");</script>';
