@@ -2,26 +2,26 @@
 include_once 'header.php';
 ?>
 
-<section class="signup-form">
+<div class="forms-wrapper">
     <h1>Bejelentkezés</h1>
     <div class="signup-form-form">
         <form action="includes/login.inc.php" method="post"><br>
             <input type="text" name="email" placeholder="Email..."><br>
             <input type="password" name="password" placeholder="Jelszó..."><br>
-            <button type="submit" name="submit">Bejelentkezés</button>
+            <button type="submit" name="submit" id="submit">Bejelentkezés</button>
         </form>
     </div>
-    <?php
+<?php
 if(isset($_GET["error"])){
     if($_GET["error"]=="emptyinput"){
-        echo'<script type="text/javascript">window.alert("Tölts ki minden mezőt!");</script>';
+        echo'<p class="errormessage">Nem Töltöttél ki minden mezőt!</p>';
     }
     else if($_GET["error"]=="wronglogin"){
-        echo'<script type="text/javascript">window.alert("Rossz adatokat adtál meg!");</script>';
+        echo'<p class="errormessage">Rossz adatokat adtál meg!</p>';
     }
 }
 ?>
-</section>
+</div>
 
 
 

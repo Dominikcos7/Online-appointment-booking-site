@@ -68,3 +68,35 @@ nav a:hover::before{
   width:100%;
 }
 
+.forms-wrapper{
+  background: #aaa;
+  width: 60%;
+  margin:0 auto 50px auto;
+  text-align: center;
+}
+
+.forms-wrapper #submit{
+  background: #ddd;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.forms-wrapper h1 {
+  margin-top: 15px;
+  padding-top:10px;
+}
+
+.forms-wrapper input{
+  background: #ddd;
+  border-radius: 7px;
+  border: 2px solid #444;
+  outline: none;
+  margin-bottom: 2px;
+}
+
+p.errormessage{
+  color:black;
+  font-weight: bold;
+  padding-bottom:10px;
+}
