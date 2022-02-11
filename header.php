@@ -15,7 +15,7 @@ session_start();
 <body>
     <header>
         <div class="container">
-            <img src="img/pngegg (1).png" class="logo"> 
+            <a href="index.php"><img src="img/pngegg (1).png" class="logo"></a> 
 
             <nav>
                 <ul>
