@@ -1,0 +1,29 @@
+/* paletta: #55d6aa->türkiz, #222->sötétszürke,
+ #3cacb0->világoskékedzöld, #3c506c->fémes kékesszürke
+ #8ecccc->világosabb header szín #50717b->zöldes szürke*/
+
+
+
+body{
+    color:#55d6aa;
+}
+
+.noi-fodraszat-wrapper{
+    color: white;
+    background-color: #3c506c;
+}
+
+.ferfi-fodraszat-wrapper{
+    color: white;
+    background-color: #608a8a;
+}
+
+.gyerek-fodraszat-wrapper{
+    color: white;
+    background-color: #50717b;
+}
+
+.mukorom-wrapper{
+    color: white;
+    background-color: #4a98af;
+}
