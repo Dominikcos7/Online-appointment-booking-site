@@ -1,25 +1,42 @@
 <?php
 
-$selectedServices_noiFodraszat;
-$selectedServices_ferfiFodraszat;
-$selectedServices_gyerekFodraszat;
-$selectedServices_mukorom;
+$services=array();
 
+if(isset($_POST["submit-szolgaltatasok"])){
 
+    if(isset($_POST["noi-fodraszat-szolg"])){
+       foreach($_POST["noi-fodraszat-szolg"]as$value){
+        $services[]=$value;
+        } 
+    }
 
-if(isset($_POST["submit-noi-fodraszat"])){
-    $selectedServices_noiFodraszat=$_POST["noi-fodraszat-szolg[]"];
+    if(isset($_POST["ferfi-fodraszat-szolg"])){
+        foreach($_POST["ferfi-fodraszat-szolg"]as$value){
+         $services[]=$value;
+         } 
+     }
+
+     if(isset($_POST["gyerek-fodraszat-szolg"])){
+        foreach($_POST["gyerek-fodraszat-szolg"]as$value){
+         $services[]=$value;
+         } 
+     }
+
+     if(isset($_POST["mukorom-szolg"])){
+        foreach($_POST["mukorom-szolg"]as$value){
+         $services[]=$value;
+         } 
+     }
+
+     if(isset($_POST["hajkezeles-szolg"])){
+        foreach($_POST["hajkezeles-szolg"]as$value){
+         $services[]=$value;
+         } 
+     }
 }
 
-if(isset($_POST["submit-ferfi-fodraszat"])){
-    $selectedServices_ferfiFodraszat=$_POST["ferfi-fodraszat-szolg[]"];
+foreach($services as $value){
+    echo $value."<br>";
 }
 
-if(isset($_POST["submit-gyerek-fodraszat"])){
-    $selectedServices_gyerekFodraszat=$_POST["gyerek-fodraszat-szolg[]"];
-}
-
-if(isset($_POST["submit-mukorom"])){
-    $selectedServices_mukorom=$_POST["mukorom-szolg[]"];
-}
 
