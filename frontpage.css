@@ -1,0 +1,58 @@
+/* paletta: #55d6aa->türkiz, #222->sötétszürke,
+ #3cacb0->világoskékedzöld, #3c506c->fémes kékesszürke
+ #8ecccc->világosabb header szín #50717b->zöldes szürke
+ #465e4d->mocsárzöld*/
+
+
+
+body{
+    color:#55d6aa;
+}
+
+.service-wrapper-grid{
+    margin:0 auto;
+    max-width: 70%;
+    display:grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.service-wrapper{
+    color:white;
+}
+
+#noi-fodraszat-wrapper{
+    background-color: #3c506c;
+    grid-column: span 2;
+}
+
+#hajkezeles-wrapper{
+    background-color: #465e4d;
+    grid-column: span 2;
+}
+
+#ferfi-fodraszat-wrapper{
+    background-color: #608a8a;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#gyerek-fodraszat-wrapper{
+    background-color: #50717b;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+#mukorom-wrapper{
+    background-color: #4a98af;
+    grid-column: span 3;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+h1{
+    text-align: center;
+}
+
+

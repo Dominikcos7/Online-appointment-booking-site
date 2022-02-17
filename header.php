@@ -22,7 +22,7 @@ session_start();
                     <li><a href="index.php">Főoldal</a></li>
                     <li><?php 
                             if(isset($_SESSION["usersEmail"]))
-                            echo'<a href="profile.php">Profil</a>';
+                            echo'<a href="services.php">Szolgáltatásaim</a>';
                             else
                             echo'<a href="register.php">Regisztráció</a>';
                     ?></li>

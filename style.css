@@ -100,3 +100,16 @@ p.errormessage{
   font-weight: bold;
   padding-bottom:10px;
 }
+
+.notloggedin-link{
+  color:white;
+  text-decoration: underline;
+}
+
+#notloggedinP{
+  text-align: center;
+}
+
+.center-services-button{
+  text-align: center;
+}
